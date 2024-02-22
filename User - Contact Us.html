@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400;500;600;700');
+  body { font-family: 'Poppins', Arial; line-height: 1.6; font-size: 16px; }
+  .container { width: 100%; max-width: 600px; margin: 20px auto; background: #ffffff; padding: 20px; }
+  .logo {
+        max-width: 100%; /* This ensures the image is never larger than its container */
+        height: auto; /* This maintains the aspect ratio of the image */
+        display: block; /* This can remove any unwanted space beneath the image */
+        margin-left: auto; /* This centers the image if the container is wider */
+        margin-right: auto;
+        margin-bottom: 10px; }
+  .header { background-color: #f2f2f2; padding: 10px; text-align: center; }
+  .listing-section {
+        display: flex; /* Keeps elements in a row */
+        flex-wrap: wrap; /* Allows items to wrap onto the next line on smaller screens */
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Centers items vertically */
+        padding: 10px;
+        background-color: #f9f9f9;
+        margin-bottom: 10px; }
+  .listing-details { flex-grow: 1; }
+  .listing-details p { margin-left: 10px; margin-right: 10px; line-height: 1.2; }
+  .listing-details h3 { margin-left: 10px; margin-top:10px; }
+  .listing-details h4 { margin-left: 10px; }
+  .lead-section { background-color: #f9f9f9; padding: 10px; margin-bottom: 10px; }
+  .lead-section p { margin-left: 10px; margin-right: 10px; }
+  .lead-section h3 { margin-left: 10px; margin-top:10px; }
+  .lead-section h4 { margin-left: 10px; }
+  .house-image {
+        width: 100%; /* Ensures the image is always as wide as its parent container */
+        max-width: 240px; /* The maximum width the image can be on larger screens */
+        height: auto; /* Maintains the aspect ratio of the image */
+        object-fit: contain; /* Ensures the image fits nicely within the frame without stretching */
+        margin: 0 auto; /* Centers the image within its container */
+        display: block; /* Ensures the image is on its own line */ }
+  .footer { font-family: Arial; padding: 20px; text-align: center; background-color: #f2f2f2; font-size: 0.8em; }
+  .footer a { color: #000000; text-decoration: underline; }
+  .footer p { margin: 10px 0; }
+  .social-icons img { height: 32px; width: 32px; margin: 0 5px; }
+    /* Inline-block fallback for clients like Gmail */
+  .listing-details, .house-image {
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+        vertical-align: top;
+        box-sizing: border-box; }
+  /* Media query for clients that do support it */
+  @media only screen and (max-width: 600px) {
+    .listing-section {
+      display: block !important; }
+    .listing-details, .house-image {
+      display: block !important;
+      width: 100% !important;
+      max-width: none !important; /* Override any max-width for the mobile layout */   }
+  }
+</style>
+</head>
+<body>
+    <div class="container">
+      <img src="https://dev.blog-chatval.dinamicka.info/wp-content/uploads/2024/02/Centerd-Logo-Final-Shadow1x.png" alt="Valery Real Estate Logo" class="logo" style="width: 150px; max-width: 100%; height: auto;">
+      <div class="header">
+          <h2>We've Received Your Inquiry</h2>
+        </div>
+        <div class="lead-section">
+          <h3>Hi Michael 👋</h3>
+          <p>We've got your message! A member of the Valery team will be reaching out to you shortly.</p>
+          <p>Thank you for your interest in Valery! 🏠🤖</p>
+          </div>
+          <div class="listing-section">
+            <div class="listing-details"> 
+          <h3>Contact Request Details:</h3>
+          <p><strong>Full Name:</strong> Michael Lee</p>
+          <p><strong>Email Address:</strong> <a href="mailto:michael@gmail.com">michael@gmail.com</a></p>
+          <p><strong>Phone Number:</strong> <a href="tel:+14164166454">(416) 416-6454</a></p>  
+          <p><strong>Role:</strong> Buyer</p>
+          <p><strong>Message:</strong> Hi, I'm looking to buy my first home for my family. I need an agent and have a few houses that I'd like to check out. Please contact me in the evening sometime this week. Thank you!
+          </div>
+        </div>
+        <div class="footer">
+          <hr style="border-top: 1px solid #434343; width: 95%; margin: 20px auto;">
+          <p><strong>Questions? Get in touch:</strong> <a href="mailto:info@valery.ca">info@valery.ca</a> - <a href="tel:(416) 699-0825">(416) 699-0825</a></p>
+          <p><strong>Explore Homes on Valery:</strong> <a href="http://www.valery.ca">www.valery.ca</a></p>
+          <p>390 Edgeley Blvd Unit 18, Vaughan, ON L4K 3Z6 Canada</p>
+    
+          <div class="social-icons">
+            <a href="https://www.facebook.com/ChatValBot/" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Facebook_svg-512.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com/ValeryCanada" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Twitter_svg-512.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Linkedin_svg-512.png" alt="Linkedin"></a>
+            <a href="https://www.instagram.com/Valery.canada" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Instagram_svg-512.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/@valeryrealestate" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2421/512/TikTok-256.png" alt="TikTok"></a>
+          </div>
+    
+          <p>© 2024 Valery Real Estate Inc., Brokerage. All Rights Reserved</p>
+          <p>This message was intended for {{ email }}. If you did not make this request or believe you have received this message in error, please notify us immediately at support@valery.ca.</p>
+        </div>
+    </div>
+    </body>    
+</html>

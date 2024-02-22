@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body { font-family: Arial, sans-serif; line-height: 1.6; font-size: 16px; }
+  .container { width: 100%; max-width: 600px; margin: 20px auto; background: #ffffff; padding: 20px; }
+  .logo {
+        max-width: 100%; /* This ensures the image is never larger than its container */
+        height: auto; /* This maintains the aspect ratio of the image */
+        display: block; /* This can remove any unwanted space beneath the image */
+        margin-left: auto; /* This centers the image if the container is wider */
+        margin-right: auto;
+        margin-bottom: 10px; }
+  .header { background-color: #f2f2f2; padding: 10px; text-align: center; }
+  .listing-section {
+        display: flex; /* Keeps elements in a row */
+        flex-wrap: wrap; /* Allows items to wrap onto the next line on smaller screens */
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Centers items vertically */
+        padding: 10px;
+        background-color: #f9f9f9;
+        margin-bottom: 10px; }
+  .listing-details { flex-grow: 1; }
+  .listing-details p { margin-left: 10px; margin-right: 10px; line-height: 1.2; }
+  .listing-details h3 { margin-left: 10px; margin-top:10px; }
+  .lead-section { background-color: #f9f9f9; padding: 10px; margin-bottom: 10px; }
+  .lead-section p { margin-left: 10px; margin-right: 10px; line-height: 1.2; }
+  .lead-section h3 { margin-left: 10px; margin-top:10px; }
+  .house-image {
+        width: 100%; /* Ensures the image is always as wide as its parent container */
+        max-width: 240px; /* The maximum width the image can be on larger screens */
+        height: auto; /* Maintains the aspect ratio of the image */
+        object-fit: contain; /* Ensures the image fits nicely within the frame without stretching */
+        margin: 0 auto; /* Centers the image within its container */
+        display: block; /* Ensures the image is on its own line */ }
+  .footer { font-family: Arial; padding: 20px; text-align: center; background-color: #f2f2f2; font-size: 0.8em; }
+  .footer a { color: #000000; text-decoration: underline; }
+  .footer p { margin: 10px 0; }
+  .social-icons img { height: 32px; width: 32px; margin: 0 5px; }
+    /* Inline-block fallback for clients like Gmail */
+  .listing-details, .house-image {
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+        vertical-align: top;
+        box-sizing: border-box; }
+  /* Media query for clients that do support it */
+  @media only screen and (max-width: 600px) {
+    .listing-section {
+      display: block !important; }
+    .listing-details, .house-image {
+      display: block !important;
+      width: 100% !important;
+      max-width: none !important; /* Override any max-width for the mobile layout */   }
+  }
+  .date-time { display: flex; justify-content: space-between; }
+  .date-time div { margin-right: 20px; margin-left: 20px; margin-top: 10px;}
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="https://dev.blog-chatval.dinamicka.info/wp-content/uploads/2024/02/Centerd-Logo-Final-Shadow1x.png" alt="Valery Real Estate Logo" class="logo" style="width: 150px; max-width: 100%; height: auto;">
+  <div class="header">
+    <h2>New Agent Lead - Join Valery</h2>
+  </div>
+  <div class="date-time">
+    <div><strong>Date:</strong> February 20, 2024</div>
+    <div><strong>Time:</strong> 08:44:26 PM</div>
+  </div>
+  <div class="lead-section">
+    <h3>Agent Lead Details</h3>
+    <p><strong>Full Name:</strong> Michael Lee</p>
+    <p><strong>Email Address:</strong> <a href="mailto:michael@gmail.com">michael@gmail.com</a></p>
+    <p><strong>Phone Number:</strong> <a href="tel:+14164166454">(416) 416-6454</a></p>  
+    <p><strong>Region:</strong> Durham</p>
+    <p><strong>Message:</strong> Hello, I’m very interested in learning more about becoming a realtor at Valery. I’ve been an agent for 5 years and have done 24 deals in my career. Look forward to hearing from you!</p>
+  </div>
+  <div class="footer">
+    <p>&copy; 2024 Valery Real Estate Inc., Brokerage. All rights reserved.</p>
+  </div>
+</div>
+</body>
+</html>
